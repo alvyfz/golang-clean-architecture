@@ -23,5 +23,4 @@ func (repository *propertiesRepositoryImpl) Insert(properties entity.Properties)
 func (repository *propertiesRepositoryImpl) FindAll() (properties []entity.Properties){
 	repository.DB.Find(&properties)
 	return 
-	
 }

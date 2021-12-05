@@ -19,7 +19,7 @@ type productServiceImpl struct {
 func (service *productServiceImpl) Create(request model.CreatePropertiesRequest) (response model.CreatePropertiesResponse) {
 
 	properties := entity.Properties{
-	
+		
 		Name: request.Name,
 		Price: request.Price,
 		Description :request.Description,
@@ -27,7 +27,7 @@ func (service *productServiceImpl) Create(request model.CreatePropertiesRequest)
 	}
 	service.PropertiesRepository.Insert(properties)
 	response = model.CreatePropertiesResponse{
-		ID: properties.ID, 
+		 
 		Name: properties.Name,
 		Price: properties.Price,
 		Description :properties.Description,

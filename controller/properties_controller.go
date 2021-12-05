@@ -16,8 +16,8 @@ func NewPropertiesController(propertiesService *service.PropertiesService) Prope
 	return PropertiesController{PropertiesService: *propertiesService}
 }
 
-func (controller *PropertiesController) Route(*echo.Echo){
-	e := echo.New()
+func (controller *PropertiesController) Route(e *echo.Echo){
+
 
 	e.POST("/property",controller.Create )
 	e.GET("/property",controller.List )
