@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"myproperty-clean-architecture/model"
-	"myproperty-clean-architecture/service"
+	"myproperty-clean-architecture/app/model"
+	service "myproperty-clean-architecture/service/properties"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
@@ -34,7 +34,7 @@ if err := c.Bind(&request); err != nil {
 	}
 	response := controller.PropertiesService.Create(request)
 	return c.JSON(http.StatusOK, echo.Map{
-		"message": "CreatePropertyController",
+		"message": "Create property success",
 		"data":    response,
 	})
 }

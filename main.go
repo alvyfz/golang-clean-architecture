@@ -1,10 +1,10 @@
 package main
 
 import (
-	"myproperty-clean-architecture/config"
+	"myproperty-clean-architecture/app/config"
 	"myproperty-clean-architecture/controller"
-	"myproperty-clean-architecture/repository"
-	"myproperty-clean-architecture/service"
+	repository "myproperty-clean-architecture/repository/properties"
+	service "myproperty-clean-architecture/service/properties"
 
 	"github.com/labstack/echo/v4"
 )

@@ -1,9 +1,9 @@
 package service
 
 import (
-	"myproperty-clean-architecture/entity"
-	"myproperty-clean-architecture/model"
-	"myproperty-clean-architecture/repository"
+	"myproperty-clean-architecture/app/entity"
+	"myproperty-clean-architecture/app/model"
+	repository "myproperty-clean-architecture/repository/properties"
 )
 
 func NewPropertiesService(ProductRepository *repository.PropertiesRepository) PropertiesService {
@@ -29,8 +29,8 @@ func (service *productServiceImpl) Create(request model.CreatePropertiesRequest)
 	response = model.CreatePropertiesResponse{
 		 
 		Name: properties.Name,
-		Price: properties.Price,
-		Description :properties.Description,
+		// Price: properties.Price,
+		// Description :properties.Description,
 		
 	}
 	return response

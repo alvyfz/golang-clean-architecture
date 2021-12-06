@@ -21,10 +21,10 @@ type CreatePropertiesRequest struct {
 }
 type CreatePropertiesResponse struct {
 	
-	ID             uint          `gorm:"primaryKey"`
+	// ID             uint          `gorm:"primaryKey"`
 	Name           string        `json:"name"`
-	Price          int           `json:"price"`
-	Description    string        `json:"description"`
+	// Price          int           `json:"price"`
+	// Description    string        `json:"description"`
 	
 }
 

@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"myproperty-clean-architecture/entity"
+	"myproperty-clean-architecture/app/entity"
 
 	"gorm.io/gorm"
 )
@@ -17,7 +17,7 @@ func NewPropertiesRepository(db *gorm.DB) PropertiesRepository {
 
 func (repository *propertiesRepositoryImpl) Insert(properties entity.Properties) {
 		repository.DB.Create(&properties)
-		return  
+		return
 		}
 		
 func (repository *propertiesRepositoryImpl) FindAll() (properties []entity.Properties){

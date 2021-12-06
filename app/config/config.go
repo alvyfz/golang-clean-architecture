@@ -2,7 +2,7 @@ package config
 
 import (
 	"fmt"
-	"myproperty-clean-architecture/model"
+	"myproperty-clean-architecture/app/model"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

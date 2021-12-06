@@ -1,7 +1,7 @@
 package service
 
 import (
-	"myproperty-clean-architecture/model"
+	"myproperty-clean-architecture/app/model"
 )
 
 
